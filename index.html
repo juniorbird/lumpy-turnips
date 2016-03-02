@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Test One-page React</title>
+    <script data-main="./node_modules/react/lib/" src="require.js"></script>
+  </head>
+  <body>
+    <p>
+      Hello, world!
+    </p>
+    <div id="react"></div>
+    <script type="text/javascript">
+      var React = requirejs(['React'], function(react) {
+        console.log(react);
+      });
+      var ReactDom = requirejs(['ReactDOM'], function(reactdom) {
+        console.log(reactdom);
+      });
+
+      var App = React.createClass({
+        getInitialState: function() {
+          var state = {
+            foo: 'bar',
+            baz: 'quux',
+          };
+          return state;
+        },
+
+        render: function() {
+          var layout = '<div id="App">' +
+            '<div className="row">' +
+              '<p className={this.state.baz}>' +
+                '{this.state.foo}' +
+              '</p>' +
+            '</div>' +
+          '</div>';
+          return layout;
+        }
+      });
+
+      ReactDom.render(React.createElement(App), document.getElementById('react'));
+
+    </script>
+  </body>
+</html>

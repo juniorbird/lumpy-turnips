@@ -1,0 +1,22 @@
+{
+  "name": "lumpy-turnips-test",
+  "version": "1.0.0",
+  "description": "testing react",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juniorbird/lumpy-turnips.git"
+  },
+  "author": "Wade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/juniorbird/lumpy-turnips/issues"
+  },
+  "homepage": "https://github.com/juniorbird/lumpy-turnips#readme",
+  "dependencies": {
+    "react": "^0.14.7"
+  }
+}
