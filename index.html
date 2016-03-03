@@ -11,9 +11,9 @@
           left: 0;
       }
 
-      .ace-monokai .ace_marker-layer .ace_active-line {
+      /*.ace-monokai .ace_marker-layer .ace_active-line {
         background-color: red !important;
-      }
+      }*/
   </style>
 </head>
 <body>
@@ -181,6 +181,7 @@
     $('#editor').click(function (e) {
       console.log('clicked');
       forceSelection(editor);
+      $('.ace-monokai .ace_marker-layer .ace_active-line').css('background-color', 'blue !important')
     });
   </script>
 </body>
